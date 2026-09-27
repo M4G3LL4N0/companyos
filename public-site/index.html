@@ -11,33 +11,30 @@
 html,body{max-width:100%;overflow-x:hidden}
 h1,h2,p,li,a{overflow-wrap:anywhere}
 
-body { margin:0; background:#1a1024; color:#f3e8ff; font:17px/1.45 "Palatino Linotype", Palatino, serif; }
-.sheet { max-width:760px; margin:28px auto; background:#241433; padding:28px; border-top:8px solid #d8b4fe; }
-.rule { letter-spacing:.14em; text-transform:uppercase; font-size:12px; color:#d8b4fe; }
-h1 { font-size:42px; margin:8px 0; }
-h2 { font-weight:500; font-size:22px; }
-table { width:100%; border-collapse:collapse; margin-top:12px; }
-td, th { border-bottom:1px solid #f3e8ff; text-align:left; padding:8px 4px; }
-.cta { display:inline-block; margin-top:16px; color:#1a1024; background:#f3e8ff; text-decoration:none; padding:10px 14px; }
-#scope { max-width:760px; margin:0 auto 32px; }
+body { margin:0; background:#07080a; color:#d6ffe4; font:16px/1.5 ui-monospace, monospace; }
+.term { max-width:920px; margin:32px auto; background:#0d1210; border:1px solid #234; border-radius:12px; overflow:hidden; }
+header { display:flex; gap:8px; align-items:center; padding:12px 14px; background:#101816; }
+header i { width:10px; height:10px; border-radius:50%; background:#f8fafc; display:block; }
+header span { margin-left:8px; color:#9aa; }
+pre { white-space:pre-wrap; padding:8px 18px 18px; margin:0; }
+.cta { display:inline-block; margin:0 18px 18px; color:#04140c; background:#f8fafc; text-decoration:none; padding:8px 12px; }
+#scope { max-width:920px; margin:0 auto 40px; padding:0 8px; }
 
 </style>
 </head>
 <body>
 
-<article class="sheet">
-  <p class="rule">Lab · ledger</p>
-  <h1>companyos</h1>
-  <h2>Paste the week&#x27;s chaos. Get a brief the company can run against.</h2>
-  <p>CompanyOS is a concept for a company operating system: ingest meetings, tickets, customer notes, goals, and blockers, then surface a priority stack, owners, risks, and a weekly brief. The repo has a demo command center and local synthesis. It is not a finished customer product and it is not a live company OS.</p>
-  <table>
-    <tr><th>Field</th><th>Record</th></tr>
-    <tr><td>Customers</td><td>None claimed</td></tr>
-    <tr><td>Metrics</td><td>None claimed</td></tr>
-    <tr><td>Status</td><td>Lab</td></tr>
-  </table>
-  <a class="cta" href="#scope">Read the notes</a>
-</article>
-<section id="scope"><ul><li>The page describes the current work. It does not invent customers.</li><li>A live signup, price, or metric appears here only when the product has one.</li><li>Maturity on this page is a label, not a launch claim.</li></ul></section>
+<main class="term">
+  <header><i></i><i></i><i></i><span>companyos</span></header>
+  <pre>
+$ status
+maturity  Lab
+claim     Paste the week&#x27;s chaos. Get a brief the company can run against.
+
+CompanyOS is a concept for a company operating system: ingest meetings, tickets, customer notes, goals, and blockers, then surface a priority stack, owners, risks, and a weekly brief. The repo has a demo command center and local synthesis. It is not a finished customer product and it is not a live company OS.
+  </pre>
+  <a class="cta" href="#scope">$ read scope</a>
+</main>
+<section id="scope"><h2>scope</h2><ul><li>The page describes the current work. It does not invent customers.</li><li>A live signup, price, or metric appears here only when the product has one.</li><li>Maturity on this page is a label, not a launch claim.</li></ul></section>
 </body>
 </html>
