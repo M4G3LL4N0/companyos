@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(139, 92, 246, 0.2), transparent 55%),
+    radial-gradient(ellipse 90% 55% at 100% 0%, rgba(59, 130, 246, 0.14), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 0% 20%, rgba(167, 139, 250, 0.08), transparent 45%),
+    linear-gradient(180deg, #0a0a0c 0%, #020617 42%, #020617 100%);
+  min-height: 100vh;
+}
+
+.panel {
+  @apply rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/40 backdrop-blur-sm;
+}
